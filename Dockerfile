@@ -6,5 +6,5 @@ RUN nave use stable npm install -g harp
 RUN chmod +x /usr/bin/nave
 VOLUME /var/www
 COPY index.md /var/www/index.md
-WORKDIR ["/var/www"]
+WORKDIR /var/www
 CMD nave use 0.10.32 /.nave/installed/0.10.32/bin/harp server /var/www --port 80
