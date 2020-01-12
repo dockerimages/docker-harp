@@ -8,4 +8,4 @@ Usage
 
 To serve current working directory:
 
-    docker run --rm -v $(pwd):/var/www dockerimages/harp
+    docker run --rm -v $(pwd):/var/www -p 8080:80 dockerimages/harp
